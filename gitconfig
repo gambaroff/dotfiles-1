@@ -13,6 +13,7 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  l = log --pretty=colored
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
@@ -28,3 +29,6 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+  name = Stephania Thomas
+  email = stgambar@gambaroff.com

@@ -1,5 +1,6 @@
 # makes color constants available
 autoload -U colors
+export LSCOLORS=GxFxCxDxBxegedabagaced
 colors
 
 # enable colored output from ls, etc. on FreeBSD-based systems
