@@ -25,3 +25,6 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[user]
+	name = Stephania Gambaroff Thomas
+	email = stephania@thoughtbot.com
