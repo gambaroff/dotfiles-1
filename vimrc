@@ -79,11 +79,15 @@ if executable('ag')
   endif
 endif
 
+" Look up usage of word under cursor with `:Ag!` instead of `man`
+nnoremap K :Ag! "\b<C-R>=expand("<cword>")<CR>\b"<CR>
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
 
 " Numbers
+set relativenumber
 set number
 set numberwidth=5
 
@@ -143,6 +147,8 @@ let g:syntastic_eruby_ruby_quiet_messages =
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.
 set spellfile=$HOME/.vim-spell-en.utf-8.add
+" Disable beep and flash"
+set noeb vb t_vb=
 
 " Autocomplete with dictionary words when spell check is on
 set complete+=kspell
