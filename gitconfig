@@ -12,6 +12,7 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  br = branch
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
