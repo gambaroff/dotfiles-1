@@ -14,6 +14,7 @@
   pf = push --force-with-lease
   st = status
   l = log --pretty=colored
+  br = branch
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
