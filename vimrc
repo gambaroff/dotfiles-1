@@ -167,3 +167,6 @@ set diffopt+=vertical
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+"Allow  JSX in .js files"
+let g:jsx_ext_required = 0
