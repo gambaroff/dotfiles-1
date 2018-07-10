@@ -16,7 +16,7 @@
   l = log --pretty=colored
   br = branch
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/gambaroff/.gitignore
   autocrlf = input
 [merge]
   ff = only
@@ -33,3 +33,9 @@
 [user]
   name = Stephania Thomas
   email = stgambar@gambaroff.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
