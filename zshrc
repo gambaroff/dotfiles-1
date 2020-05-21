@@ -49,3 +49,6 @@ _load_settings "$HOME/.zsh/configs"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# added by travis gem
+[ -f /Users/gambaroff/.travis/travis.sh ] && source /Users/gambaroff/.travis/travis.sh
