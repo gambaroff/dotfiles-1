@@ -27,8 +27,8 @@
 [include]
   path = ~/.gitconfig.local
 [user]
-	name = Stephania Gambaroff Thomas
-	email = stephania@thoughtbot.com
+	name = Stephania Thomas
+	email = stephania.thomas@zendesk.com
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
