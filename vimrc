@@ -180,7 +180,10 @@ set noeb vb t_vb=
 set complete+=kspell
 
 " Always use vertical diffs
-set diffopt+=vertical
+if &diff
+    set diffopt-=internal
+    set diffopt+=vertical
+endif
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")

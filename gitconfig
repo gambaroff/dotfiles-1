@@ -16,7 +16,7 @@
   l = log --pretty=colored
   br = branch
 [core]
-	excludesfile = /Users/gambaroff/.gitignore
+	excludesfile = /Users/stephania.thomas/.gitignore_global
   autocrlf = input
 [merge]
   ff = only
