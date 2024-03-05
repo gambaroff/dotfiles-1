@@ -19,3 +19,31 @@ alias path='echo $PATH | tr -s ":" "\n"'
 if [[ -f ~/.aliases.local ]]; then
   source ~/.aliases.local
 fi
+alias vp='vim ~/dotfiles/zshrc.local'
+alias sp='. ~/dotfiles/zshrc.local'
+
+ffc() {
+  if [[ -z "$1" ]]; then
+    echo "NO PATTERN"
+    return 1
+  fi
+  pattern=$1
+  find . -type f -exec grep -i -- "$pattern" {} +
+}
+
+ff() {
+  if [[ -z "$1" ]]; then
+    echo "NO FILENAME"
+    return 1
+  fi
+  find . -type f -name "*$1*"
+}
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+#export PATH="$PATH:$HOME/.rvm/bin"
+
+# added by travis gem
+[ -f /Users/gambaroff/.travis/travis.sh ] && source /Users/gambaroff/.travis/travis.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/Code/zendesk/kubectl_config/dotfiles/kubectl_stuff.bash
