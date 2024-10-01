@@ -45,3 +45,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # added by travis gem
 [ -f /Users/gambaroff/.travis/travis.sh ] && source /Users/gambaroff/.travis/travis.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
